@@ -24,10 +24,11 @@ const Footer = () => {
                 </span>
               </Link>
               <p className="text-[12px]">
-                Seachems NG is a leading wholesale distributor of high-quality
-                chemicals serving diverse industries across Nigeria. We offer a
-                comprehensive range of products, competitive pricing, reliable
-                supply, and expert support to meet your specific needs.
+                Seachems Multi-trade Ventures is a leading wholesale distributor
+                of high-quality chemicals serving diverse industries across
+                Nigeria. We offer a comprehensive range of products, competitive
+                pricing, reliable supply, and expert support to meet your
+                specific needs.
               </p>
             </div>
 
