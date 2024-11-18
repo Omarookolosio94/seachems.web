@@ -10,7 +10,7 @@ const Notfound = () => {
   return (
     <>
       {addMetaData({
-        title: "Ocean Global Chemicals Nigeria - 404",
+        title: " Seachems Multi-trade Ventures - 404",
         description: "Page does not exist.",
       })}
 

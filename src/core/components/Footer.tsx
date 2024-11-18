@@ -34,7 +34,7 @@ const Footer = () => {
 
             <div className="col-span-5 md:col-span-1">
               <h5 className="mb-1 text-center text-[14px] font-[500] md:mb-5 md:text-start">
-                Account
+                ACCOUNT
               </h5>
 
               <div className="flex justify-center gap-5 md:flex-col md:justify-start">
@@ -47,16 +47,6 @@ const Footer = () => {
                   }
                 >
                   Shop
-                </NavLink>
-                <NavLink
-                  to="/cart"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-[12px] underline hover:underline"
-                      : "text-[12px] hover:underline"
-                  }
-                >
-                  Cart
                 </NavLink>
                 <NavLink
                   to="/about"
@@ -73,7 +63,7 @@ const Footer = () => {
 
             <div className="col-span-5 md:col-span-1">
               <h5 className="mb-1 text-center text-[14px] font-[500] md:mb-5 md:text-start">
-                Quick Links
+                QUICK LINKS
               </h5>
 
               <div className="flex justify-center gap-5 md:flex-col md:justify-start">
@@ -115,7 +105,7 @@ const Footer = () => {
 
             <div className="col-span-5 md:col-span-1">
               <h5 className="mb-1 text-center text-[14px] font-[500] md:mb-5 md:text-start">
-                Support
+                SUPPORT
               </h5>
 
               <div className="flex flex-col items-center gap-2 text-[12px] md:items-start md:gap-5">

@@ -53,7 +53,7 @@ const Products = () => {
   return (
     <>
       {addMetaData({
-        title: "Ocean Global Chemicals Nigeria - Products",
+        title: "Seachems Multi-trade Ventures- Products",
         description:
           "We sell and deliver high quality chemical products nationwide. Shop with us today and get the best prices",
       })}

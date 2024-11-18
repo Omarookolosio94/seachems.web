@@ -42,7 +42,7 @@ const SingleProduct = () => {
   return (
     <>
       {addMetaData({
-        title: "Ocean Global Chemicals Nigeria - Single Product",
+        title: " Seachems Multi-trade Ventures - Single Product",
         description:
           product != null
             ? `Buy ${product?.name} from us today`
