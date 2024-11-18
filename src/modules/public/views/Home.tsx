@@ -52,7 +52,7 @@ const Home = () => {
                     <div
                         className="hidden h-full w-3/12 flex-col gap-2 border-r border-r-black-shade pr-[10px] pt-[20px] text-[14px] sm:flex">
                         <Link to="/products">All</Link>
-                        {categories?.length > 1 &&
+                        {categories?.length > 0 &&
                             categories?.map((cat) => (
                                 <Link to={`/products?category=${cat?.categoryId}`}>
                                     {cat?.name}
@@ -83,7 +83,7 @@ const Home = () => {
                     <Subheader shortHeader="Categories" fullHeader="Browse By Category"/>
 
                     <div className="flex gap-5 overflow-x-auto">
-                        {categories?.length > 1 &&
+                        {categories?.length > 0 &&
                             categories?.map((cat) => (
                                 <Link
                                     to={`/products?category=${cat?.categoryId}`}
