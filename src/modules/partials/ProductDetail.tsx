@@ -25,44 +25,34 @@ const ProductDetail = ({
 
   useEffect(() => {
     setDisplayedImg(product?.images[0]?.url ?? defaultImg);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product?.sku]);
 
   return (
     <>
       {product !== null && (
         <section className={`flex flex-col gap-5 sm:flex-row ${boxStyle}`}>
-          <div className="flex w-full flex-col-reverse gap-3 sm:w-3/5 sm:flex-row">
+          <div className="flex w-full h-[60vh] flex-col-reverse gap-3 sm:w-3/5 sm:flex-row">
             <div className="flex w-full justify-center gap-5 sm:block sm:w-[80px]">
-              {product?.images?.length > 0
-                ? product?.images?.map((pic) => (
-                    <div
-                      key={pic?.logoId}
-                      className={`${gallery}`}
-                      onClick={() => setDisplayedImg(pic?.url)}
-                    >
-                      <img
-                        src={pic?.url}
-                        alt={pic?.name}
-                        className="h-2/3 w-2/3"
-                      />
-                    </div>
-                  ))
-                : [1, 2, 3, 4].map((count: any) => (
-                    <div
-                      key={count}
-                      className={`${gallery}`}
-                      onClick={() => setDisplayedImg(defaultImg)}
-                    >
-                      <img
-                        src={defaultImg}
-                        alt="default image"
-                        className="h-2/3 w-2/3"
-                      />
-                    </div>
-                  ))}
+              {Array.from({ length: 4 }).map((_, index) => {
+                const pic = product?.images?.[index];
+                return (
+                  <div
+                    key={index}
+                    className={`${gallery}`}
+                    onClick={() => setDisplayedImg(pic?.url || defaultImg)}
+                  >
+                    <img
+                      src={pic?.url || defaultImg}
+                      alt={pic?.name || "default"}
+                      className="h-auto w-auto"
+                    />
+                  </div>
+                );
+              })}
             </div>
-            <div className="flex h-full w-full items-center justify-center rounded-[4px] bg-[#f5f5f5] py-5 sm:py-0">
+
+            <div className="flex h-full w-full items-center justify-center rounded-[4px] bg-[#f5f5f5] border border-[#f5f5f5] py-5 sm:py-0">
               <div className="flex h-2/3 w-2/3 items-center justify-center overflow-y-scroll">
                 <img src={displayedImg} alt="" className="" />
               </div>
@@ -74,7 +64,7 @@ const ProductDetail = ({
               {product?.name}
             </h4>
 
-            <p className="my-3">{product?.description}</p>
+            <p className="my-3 whitespace-pre-wrap">{product?.description}</p>
 
             <div className="border-b-[.5px] border-black-shade"></div>
 

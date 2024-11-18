@@ -20,7 +20,7 @@ export const invoiceGroup =
   "border-b-gray flex items-center justify-between border-b py-3";
 
 export const gallery =
-  "rounded-[4px] bg-[#f5f5f5] mb-3 w-[80px] h-[80px] flex items-center justify-center flex-row hover:cursor-pointer";
+  "rounded-[4px] bg-[#f5f5f5] border border-[#f5f5f5] mb-3 w-[80px] h-[80px] flex items-center justify-center flex-row hover:cursor-pointer";
 
 export const productBox =
   "mb-[28px] grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4";
